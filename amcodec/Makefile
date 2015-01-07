@@ -65,9 +65,9 @@ install:
 	install -m 0644 include/*.h /usr/include/amcodec
 	install -m 0644 include/*.h /usr/include
 	
-	install -m 0644 include/amports -d /usr/include/amcodec/amports
-	install -m 0644 include/amports/*.h /usr/include/amcodec/amports
+	install -m 0644 include/amports -d /usr/include/amports
+	install -m 0644 include/amports/*.h /usr/include/amports
 	
-	install -m 0644 include/ppmgr -d /usr/include/amcodec/ppmgr
-	install -m 0644 include/ppmgr/*.h /usr/include/amcodec/ppmgr
+	install -m 0644 include/ppmgr -d /usr/include/ppmgr
+	install -m 0644 include/ppmgr/*.h /usr/include/ppmgr
 
