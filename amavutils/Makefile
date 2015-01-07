@@ -33,7 +33,7 @@ $(TARGET): $(TARGET_OBJS)
 install:
 	install -m 0644 ${TARGET} /usr/lib/aml_libs
 	install -m 0644 include/*.h /usr/include
-	install -m 0644 include/cutils/* /usr/include/cutils
+	install -m 0644 include/cutils -d /usr/include/cutils
 
 force:
 
