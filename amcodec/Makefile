@@ -59,15 +59,15 @@ clean:$(CLRDIR)
 	rm -rf $(target_all)
 
 install:
-	install  -m 0644 libamcodec.so /usr/lib/aml_libs
+	install  -m 0644 libamcodec.so $(DESTDIR)/usr/lib/aml_libs
 	
-	install -m 0644 include -d /usr/include/amcodec
-	install -m 0644 include/*.h /usr/include/amcodec
-	install -m 0644 include/*.h /usr/include
+	install -m 0644 include -d $(DESTDIR)/usr/include/amcodec
+	install -m 0644 include/*.h $(DESTDIR)/usr/include/amcodec
+	install -m 0644 include/*.h $(DESTDIR)/usr/include
 	
-	install -m 0644 include/amports -d /usr/include/amports
-	install -m 0644 include/amports/*.h /usr/include/amports
+	install -m 0644 include/amports -d $(DESTDIR)/usr/include/amports
+	install -m 0644 include/amports/*.h $(DESTDIR)/usr/include/amports
 	
-	install -m 0644 include/ppmgr -d /usr/include/ppmgr
-	install -m 0644 include/ppmgr/*.h /usr/include/ppmgr
+	install -m 0644 include/ppmgr -d $(DESTDIR)/usr/include/ppmgr
+	install -m 0644 include/ppmgr/*.h $(DESTDIR)/usr/include/ppmgr
 
