@@ -4,12 +4,12 @@ all:
 	make -C amcodec
 	
 install:
-	mkdir -p /usr/lib/aml_libs
+	mkdir -p $(DESTDIR)/usr/lib/aml_libs
 	make -C amavutils install
 	make -C amadec install
 	make -C amcodec install
-	install -m 0666 ld.so.conf /usr/lib/aml_libs
-	install -m 0666 aml.conf /etc/ld.so.conf.d
+	install -m 0666 ld.so.conf $(DESTDIR)/usr/lib/aml_libs
+	install -m 0666 aml.conf $(DESTDIR)/etc/ld.so.conf.d
                 
 clean:
 	make -C amavutils clean
